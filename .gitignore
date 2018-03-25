@@ -1,0 +1,9 @@
+hsclutter
+makefile
+*.gch
+Test*
+test*
+rubbish*
+*.o*
+*.hi
+misc
