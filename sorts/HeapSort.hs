@@ -3,7 +3,7 @@ module HeapSort (heapSort) where
 -- Swap indices
 swap :: Ord a => [a] -> Int -> Int -> [a]
 swap ls i1 i2
-  | i1 == i2 = ls
+  | i1 == i2  = ls
   | otherwise = front ++ mid ++ back
   where
     [a, b] = if i1 < i2 then [i1, i2] else [i2, i1]

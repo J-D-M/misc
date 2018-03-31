@@ -18,7 +18,7 @@ void merge(Container &v, size_t left, size_t mid, size_t right)
 	size_t j = 0;
 
 	for (size_t k = left; k <= right; k++) {
-		//bounds check then place the smallest value in front
+		// bounds check then place the smallest value in front
 		if (j >= rSize || (i < lSize && lSub[i] <= rSub[j])) {
 			v[k] = lSub[i];
 			++i;
@@ -43,8 +43,7 @@ void mergeSort(Container &v, size_t left, size_t right)
 	}
 }
 
-template <class Container>
-void mergeSort(Container &v)
+template <class Container> void mergeSort(Container &v)
 {
 	if (!v.empty())
 		mergeSort(v, 0, v.size() - 1);
