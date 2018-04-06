@@ -7,3 +7,4 @@ rubbish*
 *.o*
 *.hi
 misc
+*.exe

@@ -9,8 +9,8 @@ template <class Container>
 void maxHeapify(Container &v, const size_t size, const size_t parent)
 {
 	size_t largest     = parent;
-	const size_t lNode = 2 * parent;
-	const size_t rNode = 2 * parent + 1;
+	const size_t lNode = 2 * parent + 1;
+	const size_t rNode = 2 * parent + 2;
 
 	auto compare = [&size, &largest, &v](size_t a) {
 		if (a < size && v[a] > v[largest])
