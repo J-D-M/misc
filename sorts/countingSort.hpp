@@ -12,7 +12,8 @@ std::vector<int> countSort(std::vector<int> const &vec, int const max)
 	for (size_t i = 1; i < counter.size(); i++)
 		counter[i] += counter[i - 1];
 
-	for (size_t i = 0; i < vec.size(); i++) {
+	size_t overflow = -1;
+	for (size_t i = vec.size() - 1; i != overflow; i--) {
 		// element count starts at 1 not 0
 		ret[counter[vec[i]] - 1] = vec[i];
 		counter[vec[i]]--;
