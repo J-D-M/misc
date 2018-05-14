@@ -57,8 +57,7 @@ template <typename T> class Stack
 		if (!empty()) {
 			return data[(size-- - 1)];
 		} else {
-			throw std::underflow_error(
-			    "Attempting to pop empty stack");
+			throw std::underflow_error("ERROR: popping empty stack");
 		}
 	}
 
