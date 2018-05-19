@@ -57,7 +57,9 @@ Queue_resize_(struct Queue *q)
 		q->data_   = malloc(sizeof(void *) * q->capacity_);
 
 		if (q->head_ > q->tail_) {
-			memcpy(q->data_, tmp + q->head_, q->)
+			memcpy(q->data_, tmp + q->head_, q->data_size_ * q->size_);
 		}
+
+		free(tmp);
 	}
 }
