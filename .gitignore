@@ -1,9 +1,1 @@
-hsclutter
-makefile
-*.gch
-testing
-rubbish*
-*.o*
-*.hi
-misc
-*.exe
+bin/
