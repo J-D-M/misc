@@ -1,8 +1,7 @@
+#include "linkedList.h"
+
 #include <stdlib.h>
 #include <string.h>
-//#include <string.h>
-
-#include "linkedList.h"
 
 /*
  * Linked list implementation

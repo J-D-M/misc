@@ -37,6 +37,7 @@ merge(Iterator left, Iterator mid, Iterator right) -> void
 	}
 }
 
+/* recursivly split into smaller containers */
 template < typename Iterator >
 auto
 merge_sort_helper(Iterator begin, Iterator end) -> void
@@ -54,7 +55,6 @@ merge_sort_helper(Iterator begin, Iterator end) -> void
 	merge(begin, mid_iter, end);
 }
 
-/* recursivly split into smaller containers */
 template < typename Iterator >
 auto
 merge_sort(Iterator begin, Iterator end) -> void
